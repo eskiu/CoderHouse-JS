@@ -12,12 +12,14 @@
     <title>Rosanti</title>
 </head>
 <body>
+
+<!-- -------------------------------------------------------------------- NAVBAR & HEADER ------------------------------------------------------------------- -->
     <header class="header">
-        <div class="max-width">
+        <div class="nav-container">
             <nav class="nav-main">
                 <a href="index.html" class="nav-img"><i class="uil uil-tear"></i></a>
                 <div class="nav-links" id="navLinks">
-                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <i class="fas fa-times" id="hide-menu"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">NOSOTROS</a></li>
@@ -25,7 +27,7 @@
                         <li><a href="#banner">CONTACTO</a></li>
                     </ul>
                 </div>
-                <i class="fas fa-bars"  onclick="showMenu()"></i>
+                <i class="fas fa-bars" id="show-menu"></i>
             </nav>
         </div>
     
@@ -37,13 +39,14 @@
     </header>
 
 
-
+<!-- --------------------------------------------------------------------- FIRST BANNER --------------------------------------------------------------------- -->
     <div class="banner banner-destacado">
         <h1>Destacados</h1>
         <span></span>
     </div>
 
 
+<!-- ---------------------------------------------------------------------- LAST ADDED --------------------------------------------------------------------- -->
     <div class="max-width">
         <section class="container-cards">
 
@@ -95,9 +98,9 @@
     </div>
 
 
-
+<!-- ------------------------------------------------------------------------ BANNER --------------------------------------------------------------------- -->
         <div class="bck-crema">
-            <section class="info-prod max-width">
+            <section class="info-prod">
                 <div class="card">
                     <div class="img">
                         <i class="far fa-gem"></i>
@@ -105,12 +108,16 @@
                         <i class="fas fa-truck-moving"></i>
                     </div>
                     <div class="card-info">
-                        <h1>Calidad Premium ~ Precios Competitivos ~ Envíos Internacionales</h1>
+                        <p>Calidad Premium </p>
+                        <p>Precios Competitivos </p>
+                        <p>Envíos Internacionales</p>
                     </div>
                 </div>
             </section>
         </div>
 
+
+<!-- ---------------------------------------------------------------------- CATEGORIES -------------------------------------------------------------------- -->
         <div class="banner">
             <h1>Categorías</h1>
             <span></span>
@@ -151,14 +158,15 @@
     </section>
 
 
+<!-- ------------------------------------------------------------------------ FOOTER --------------------------------------------------------------------- -->
     <div class="bck-crema">
         <footer class="footer max-width" id="banner">
             <div class="contact">
                 <h1>Contacto</h1>
-                <span>Telefono: +54 9 11 1234567 <br></span>
-                <span><br>Lunes - Viernes: <br>9.00 am - 8.00pm<br></span>
-                <span><br>Sabado: <br>10.00 am - 6.00pm<br></span>
-                <span><br>example@gmail.com</span>
+                <span><b>Telefono: </b>+54 9 11 1234567 <br></span>
+                <span><br><b>Lunes - Viernes: </b><br>9.00 am - 8.00pm<br></span>
+                <span><br><b>Sabado: </b><br>10.00 am - 6.00pm<br></span>
+                <span><br><b>example@gmail.com</b></span>
             </div>
 
             <div class="information">
@@ -172,19 +180,23 @@
                 <h1>Redes Sociales</h1>
                 <div class="social-img">
                 <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.google.com/?hl=es"><i class="fab fa-google-plus-g"></i></a>
                 </div>
             </div>
         </footer>
     </div>
 
-
+<!-- ------------------------------------------------------------------------- JS ---------------------------------------------------------------------- -->
+<script src="../JS/variables.js"></script>
+<script src="../JS/data.js"></script>
+<script src="../JS/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({
         duration: 700
     });
 </script>
+
 </body>
 </html>
