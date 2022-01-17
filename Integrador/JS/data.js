@@ -1,7 +1,7 @@
 class Productos{
     constructor(id, tittle, img, cat, price){
         this.id = id;
-        this.name = name;
+        this.name = tittle;
         this.img = img;
         this.tittle = tittle;
         this.price = price;

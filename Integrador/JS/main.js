@@ -1,3 +1,5 @@
+//GETTING THE CONTAINER CARDS OF SHOP
+const newCard = document.getElementById("containerCards");
 
 //RENDERING PRODUCTS OF THE SHOP
 function renderProducts(arrayProducts, etiquetaCardHTML){
@@ -21,25 +23,3 @@ function renderProducts(arrayProducts, etiquetaCardHTML){
     }
 }
 renderProducts(products, newCard);
-
-
-// FUNCTIONS OF CART AND MENU-MOBILE
-buttonShowCart.onclick = function(){
-    document.getElementById('cartV').style.visibility = 'visible'
-    document.getElementById('cartT').style.transform = 'translateX(0%)'
-}
-
-buttonHideCart.onclick = function(){
-    document.getElementById('cartV').style.visibility = 'hidden'
-    document.getElementById('cartT').style.transform = 'translateX(100%)'
-}
-
-buttonShowMenu.onclick = function(){
-    document.getElementById("navLinks").style.display = "flex";
-    document.getElementById("navLinks").style.right = "0";   
-}
-
-buttonHideMenu.onclick = function(){
-    document.getElementById("navLinks").style.right = "-200px";
-    document.getElementById("navLinks").style.display = "none";
-}

@@ -6,5 +6,14 @@ let buttonHideCart = document.getElementById('close-cart');
 let buttonShowMenu = document.getElementById('show-menu');
 let buttonHideMenu = document.getElementById('hide-menu');
 
-//GETTING THE CONTAINER CARDS OF SHOP
-const newCard = document.getElementById("containerCards");
+
+// FUNCTIONS OF CART AND MENU-MOBILE
+buttonShowMenu.onclick = function(){
+    document.getElementById("navLinks").style.display = 'flex';
+    document.getElementById("navLinks").style.right = '0';   
+}
+    
+buttonHideMenu.onclick = function(){
+    document.getElementById("navLinks").style.right = '-200px';
+    document.getElementById("navLinks").style.display = 'none';
+}
