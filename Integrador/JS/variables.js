@@ -1,8 +1,8 @@
-// OPEN AND CLOSE CART BUTTONS
-let buttonShowCart = document.getElementById('cart-btn');
+// CART BUTTONS
+let buttonShowCart = document.getElementById('open-cart');
 let buttonHideCart = document.getElementById('close-cart');
 
-//OPEN AND CLOSE MENU BUTTONS
+//MENU MOBILE BUTTONS
 let buttonShowMenu = document.getElementById('show-menu');
 let buttonHideMenu = document.getElementById('hide-menu');
 
