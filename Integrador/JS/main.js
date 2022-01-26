@@ -1,15 +1,13 @@
 //GETTING THE CONTAINER CARDS OF SHOP
-const newCard = document.getElementById("containerCards");
+const newCard = $('#containerCards');
 
 //RENDERING PRODUCTS OF THE SHOP
 
-
-
 function renderProducts(arrayProducts, etiquetaCardHTML){
     
-    etiquetaCardHTML.innerHTML="";
+    etiquetaCardHTML.html=("");
     for(let product of arrayProducts){
-        etiquetaCardHTML.innerHTML+=`
+        etiquetaCardHTML.append(`
         <article class="product">
         <div class="img-container">
         <img src="${product.img}" alt="product" class="product-img">
@@ -22,8 +20,15 @@ function renderProducts(arrayProducts, etiquetaCardHTML){
         <p>$ ${product.price}</p>
         <p> <b>3</b> cuotas sin interés de </p>
         </article>
-        `
+        `);
     }
     
 }
 renderProducts(products, newCard);
+
+$("#filtroMate").click((e)=>{
+    e.preventDefault(); //que no recargue la pág.
+    const filterMate = products.filter(e=>e.cat == "Mate");
+    console.log(filterMate);
+    renderProducts(filterMate, newCard);
+})
