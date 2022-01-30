@@ -33,6 +33,9 @@ function addToCart(id){
 
     updateCart();
 
+    //mostrar el mensaje "Añadido al carrito"
+    addedToCart();
+
 }
 
 

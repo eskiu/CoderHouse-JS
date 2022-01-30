@@ -5,13 +5,13 @@ const newCard = $('#containerCards');
 
 function renderProducts(arrayProducts, etiquetaCardHTML){
     
-    etiquetaCardHTML.html=("");
+    etiquetaCardHTML.html("");
     for(let product of arrayProducts){
         etiquetaCardHTML.append(`
         <article class="product">
         <div class="img-container">
         <img src="${product.img}" alt="product" class="product-img">
-        <button class="bag-btn" onclick="addToCart(${product.id})">
+        <button class="bag-btn" id="addToCart" onclick="addToCart(${product.id})">
         <i class="fas fa-shopping-cart"></i>
         <span>añadir al carrito</span>
         </button>
@@ -25,10 +25,3 @@ function renderProducts(arrayProducts, etiquetaCardHTML){
     
 }
 renderProducts(products, newCard);
-
-$("#filtroMate").click((e)=>{
-    e.preventDefault(); //que no recargue la pág.
-    const filterMate = products.filter(e=>e.cat == "Mate");
-    console.log(filterMate);
-    renderProducts(filterMate, newCard);
-})

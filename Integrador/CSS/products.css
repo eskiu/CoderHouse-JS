@@ -144,6 +144,16 @@ nav .fa-bars, nav .fa-times{
     width: 100%;
 }
 
+#limpiarFiltro{
+    display: none;
+    border: none;
+    color: #232323;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+}
 /* --------------------------------------------------------- CARDS -------------------------------------------------------- */
 
 .products{
@@ -218,6 +228,25 @@ nav .fa-bars, nav .fa-times{
 .product p{
     color: black;
     text-align: center;
+}
+
+.addedToCart{
+    display: none;
+    position: sticky;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+}
+
+#addedToCartSpan{
+    display: none;
+    border-radius: 5px;
+    background-color: #f9bc60;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 /* -----CARRITO------- */
