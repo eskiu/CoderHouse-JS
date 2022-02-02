@@ -33,7 +33,6 @@ $("#filtroBombilla").click((e)=>{
 $("#limpiarFiltro").click((e)=>{
     e.preventDefault();
     let clearFilter = products
-    console.log(clearFilter)
     renderProducts(clearFilter, newCard);
     $("#limpiarFiltro").css("display", "none");
 })
