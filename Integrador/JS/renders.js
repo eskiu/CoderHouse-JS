@@ -18,7 +18,7 @@ function renderProducts(arrayProducts, etiquetaCardHTML){
         </div>
         <h3>${product.name}</h3>
         <p>$ ${product.price}</p>
-        <p> <b>3</b> cuotas sin interés de </p>
+        <p> <b>3</b> cuotas sin interés de ${(product.price / 2)}</p>
         </article>
         `);
     }

@@ -341,8 +341,29 @@ nav .fa-bars, nav .fa-times{
 }
 
 .cart-footer{
-    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    margin-top: 2rem;
+}
+
+.cart-footer button{
+    background-color: #f9bc60;
+    font-weight: bold;
+    border: none;
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.compraExitosa{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #f9bc60;
+    font-weight: bold;
 }
 
 .cart-footer h3{
@@ -362,6 +383,16 @@ nav .fa-bars, nav .fa-times{
 .banner-btn:hover{
     background-color: #f9bc60;
     transition: all 0.1s linear;
+}
+
+.remove-item{
+    padding: 0 3px;
+}
+
+.remove-item:hover{
+    background-color: #f9bc60;
+    color: black;
+    border-radius: 3px;
 }
 
 /* -------------------------------------------------------------Footer---------------------------------------------------------------- */

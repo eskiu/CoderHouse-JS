@@ -11,7 +11,7 @@ fetch('../json/data.json')
                     <div class="card-description">
                         <span class="card-tittle">${user.name}</span>
                         <span class="card-price">$ ${user.price}</span>
-                        <span><b>3</b> cuotas sin interés de </span>
+                        <span><b>3</b> cuotas sin interés de ${(user.price / 2)}</span>
                     </div>
                 </div>
                 </a>

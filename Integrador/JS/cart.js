@@ -1,6 +1,7 @@
 const contenedorCartItems = document.querySelector(".cart-item");
 const subTotalCarrito = document.querySelector(".cart-total");
 const totalIconInCart = document.querySelector(".cart-items");
+const cartContent = document.querySelector(".comprar");
 
 buttonShowCart.onclick = function(){
     document.getElementById('cartV').style.visibility = 'visible';
@@ -115,4 +116,17 @@ function cambiarNumeroUnidades(action, id){
     });
 
     updateCart();
+}
+
+cartContent.addEventListener("click", ()=>{
+    cart = [];
+    updateCart();
+    successfulBuy();
+})
+
+function successfulBuy(){
+    $("#compraExitosa").css("display", "block");
+    $("#compraExitosa").slideDown("slow", () =>{
+        $("#compraExitosa").delay(1000).slideUp("slow");
+    });
 }
